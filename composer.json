@@ -1,0 +1,24 @@
+{
+    "name": "julykaz/link-picker-for-cmb2",
+    "description": "Link Picker control designed to work with CMB2",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "mkdo, mwtsn, sagetopia",
+            "homepage": "https://github.com/mkdo/link-picker-for-cmb2"
+        }
+    ],
+    "keywords": ["wordpress", "plugin", "metabox", "link", "link picker", "cmb2"],
+    "homepage": "https://github.com/mkdo/link-picker-for-cmb2",
+    "type": "wordpress-plugin",
+    "support": {
+        "issues": "https://github.com/mkdo/link-picker-for-cmb2/issues",
+        "source": "https://github.com/mkdo/link-picker-for-cmb2/"
+    },
+    "require": {
+        "php": ">5.2.4"
+    },
+    "suggest": {
+        "composer/installers": "~1.0"
+    }
+}
