@@ -11,9 +11,9 @@ jQuery(document).ready(function($) {
 		event.stopPropagation();
 		url            = $(this).closest('.link-picker').find('input.cmb_text_url ');
 		text           = $(this).closest('.link-picker').find('input.cmb_text ');
-		blank          = $(this).closest('.link-picker').find('input.cmb_checkbox ');
+		blank          = $(this).closest('.link-picker').find('select.cmb_checkbox ');
 		wpActiveEditor = 'placeholder';
-		wpLink.open();
+		wpLink.open($(this).attr('id'));
 		wpLink.textarea = url;
 
 		return false;
@@ -41,9 +41,9 @@ jQuery(document).ready(function($) {
 		}
 
 		if (linkAtts.target == '_blank') {
-			blank.prop('checked', true);
+			blank.val('true');
 		} else {
-			blank.prop('checked', false);
+			blank.val('false');
 		}
 
 		wpLink.textarea = url;

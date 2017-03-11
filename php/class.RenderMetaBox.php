@@ -83,7 +83,7 @@ class RenderMetaBox {
 			</div>
 			<div class="choose">
 				<p><label>Choose</label></p>
-				<button class="dashicons dashicons-admin-links js-insert-link button button-primary" title="<?php esc_html_e( 'Insert Link', 'cmb' ); ?>">
+				<button id="<?php echo $field_type_object->_id( '_choose' ); ?>" class="dashicons dashicons-admin-links js-insert-link button button-primary" title="<?php esc_html_e( 'Insert Link', 'cmb' ); ?>">
 	 				<span class="screen-reader-text"><?php esc_html_e( 'Choose Link', 'cmb' ); ?></span>
 	 			</button>
 			</div>

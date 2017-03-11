@@ -29,8 +29,10 @@ class AssetsController {
 
 		global $post_id;
 
+		$assets_url = apply_filters( 'link_picker_for_cmb2_assets_url', plugins_url( '/', MKDO_LPFC_ROOT ) );
+
 		/* CSS */
-		$plugin_css_url = plugins_url( 'css/plugin.css', MKDO_LPFC_ROOT );
+		$plugin_css_url = $assets_url . 'css/plugin.css';
 		wp_enqueue_style( MKDO_LPFC_TEXT_DOMAIN, $plugin_css_url );
 
 		/* Media */
@@ -39,7 +41,7 @@ class AssetsController {
 		}
 
 		/* JS */
-		$plugin_js_url  = plugins_url( 'js/plugin.js', MKDO_LPFC_ROOT );
+		$plugin_js_url  = $assets_url . 'js/plugin.js';
 		wp_enqueue_script( MKDO_LPFC_TEXT_DOMAIN, $plugin_js_url, array( 'jquery', 'jquery-ui-core', 'jquery-ui-draggable', 'jquery-ui-droppable', 'thickbox', 'wpdialogs', 'wplink' ), '1.0.4', true );
 	}
 }
